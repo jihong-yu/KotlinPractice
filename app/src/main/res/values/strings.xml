@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">KotlinPractice</string>
+
+    <string name="hello2">안녕하세요 누구누구입니다 안녕하세요</string>
+</resources>

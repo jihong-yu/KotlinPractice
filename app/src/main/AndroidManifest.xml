@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.techtown.kotlinpractice">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Contacts"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KotlinPractice">
+        <activity
+            android:name=".TabPagerActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PhoneBookWithRecyclerViewActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".RecyclerViewActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PhoneBookDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Contacts"
+            android:exported="true" />
+        <activity
+            android:name=".AddViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LibraryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ThreadActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ContextActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Resource"
+            android:exported="true" />
+        <activity
+            android:name=".NullSafety"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

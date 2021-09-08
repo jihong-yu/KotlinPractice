@@ -1,0 +1,32 @@
+Null Safety
+-> Null에 대해서 안전하다
+-> 코틀린의 특징
+
+Null vs 0
+-> 0:존재한다.
+-> Null:존재하지 않는다.
+
+Null이 안전하지 않은 이유
+-> 0 + 10 = 0
+-> Null + 10 = ? -> 에러
+-> button.setonClickListener
+-> if button이 null이면 null.setonclickListner -> 에러
+-> NullPointEsxceptionError 발생
+
+자바 방식의 코딩방식
+if (number != 0 ){
+    number += 10
+}
+if(button != null){
+    button.setonClickeLisner
+}
+
+코틀린이 Nullsafety하기 위한 사용하는문법
+-> ?:Null이 아니라면 이하 구문 실행
+-> !!:Nul이 아님을 개발자가 보장한다.(Null이 아님을 개발자가 기계에게 표시) : 만약 Null일경우 에러 발생
+
+사용방법
+button?.setOnclickLinstener
+button!!.setonCLickLisner
+
+
