@@ -42,7 +42,7 @@ class PhoneBookWithRecyclerViewActivity : AppCompatActivity() {
         phoneBook: PhoneBook = PhoneBook()
     ): PhoneBook {
         for (i in 0 until fakeNumber) {
-            phoneBook.addPerson(Person2("$i 번째 사람", "$i 번째 사람의 전화번호"))
+            phoneBook.addPerson(Person("$i 번째 사람", "$i 번째 사람의 전화번호"))
         }
         return phoneBook
     }
