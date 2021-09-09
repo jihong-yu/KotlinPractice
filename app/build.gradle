@@ -1,7 +1,9 @@
 plugins {
     id 'com.android.application'
+    id 'kotlin-kapt'
     id 'kotlin-android'
     id 'kotlin-android-extensions'
+    id 'realm-android'
 }
 
 android {

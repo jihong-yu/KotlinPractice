@@ -7,9 +7,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatViewInflater
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_phone_book_with_recycler_view.*
@@ -44,7 +42,7 @@ class PhoneBookWithRecyclerViewActivity : AppCompatActivity() {
         phoneBook: PhoneBook = PhoneBook()
     ): PhoneBook {
         for (i in 0 until fakeNumber) {
-            phoneBook.addPerson(Person("$i 번째 사람", "$i 번째 사람의 전화번호"))
+            phoneBook.addPerson(Person2("$i 번째 사람", "$i 번째 사람의 전화번호"))
         }
         return phoneBook
     }

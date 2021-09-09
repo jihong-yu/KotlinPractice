@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.techtown.kotlinpractice">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 인터넷 사용을 위한 권한 허용 -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
@@ -11,24 +11,36 @@
         android:label="Contacts"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.KotlinPractice">
+        android:theme="@style/Theme.KotlinPractice"
+        android:usesCleartextTraffic="true">
         <activity
-            android:name=".TabPager2Activity"
+            android:name=".NetworkActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".TabPagerActivity"
+            android:name=".AsyncActivity"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".PhoneBookWithRecyclerViewActivity"
+            android:name=".RealmActivity"
             android:exported="true"></activity>
+        <activity
+            android:name=".SharedPreferenceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TabPager2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".TabPagerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PhoneBookWithRecyclerViewActivity"
+            android:exported="true" />
         <activity
             android:name=".RecyclerViewActivity"
             android:exported="true" />

@@ -5,7 +5,6 @@ import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_contacts.*
@@ -51,7 +50,7 @@ class Contacts : AppCompatActivity() {
         }
     }
 
-    fun addSetOnclickListener(person:Person,view:View){
+    fun addSetOnclickListener(person:Person, view:View){
         view.setOnClickListener {
             val intent = Intent(this@Contacts,PhoneBookDetailActivity::class.java)
             intent.putExtra("name",person.name)
