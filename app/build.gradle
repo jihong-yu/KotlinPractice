@@ -54,7 +54,18 @@ dependencies {
 
     implementation 'com.google.code.gson:gson:2.8.5'
 
-    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
-    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+
+    //기본 stetho 라이브러리
+    implementation 'com.facebook.stetho:stetho:1.5.1'
+    // Okhttp3 라이브러리
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.1'
+    // Okhttp 라이브러리
+    implementation 'com.facebook.stetho:stetho-okhttp:1.5.1'
+    // UrlConnection 라이브러리
+    implementation 'com.facebook.stetho:stetho-urlconnection:1.5.1'
+    // 콘솔을 이용한 명령어 입력 기능 사용
+    implementation 'com.facebook.stetho:stetho-js-rhino:1.5.1'
 
 }

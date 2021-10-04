@@ -5,9 +5,10 @@
     <uses-permission android:name="android.permission.INTERNET" /> <!-- 인터넷 사용을 위한 권한 허용 -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CAMERA" />
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
+        android:name=".MasterApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Contacts"
@@ -16,21 +17,44 @@
         android:theme="@style/Theme.KotlinPractice"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".PerMissionActivity"
-            android:exported="true" >
+            android:name=".MytubeDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MyTubeActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
+            android:name=".OutstagramUploadActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OutStagramMyPostListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OutStargramUserInfo"
+            android:exported="true" />
+        <activity
+            android:name=".OutStagramPostListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EmailSignupActivitiy"
+            android:exported="true"></activity>
+        <activity
+            android:name=".PerMissionActivity"
+            android:exported="true" />
+        <activity
             android:name=".RetrofitLibraryActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".NetworkActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".AsyncActivity"
             android:exported="true" />

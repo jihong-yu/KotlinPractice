@@ -1,0 +1,11 @@
+package org.techtown.kotlinpractice
+
+import java.io.Serializable
+
+class Youtube(
+    var title:String? = null,
+    var thumbnail : String? = null,
+    var video : String? = null,
+    var content : String? = null
+) : Serializable{
+}
