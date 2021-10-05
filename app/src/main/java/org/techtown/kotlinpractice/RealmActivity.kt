@@ -19,7 +19,7 @@ class RealmActivity : AppCompatActivity() {
         val config: RealmConfiguration =
             RealmConfiguration.Builder().deleteRealmIfMigrationNeeded()
                 .allowWritesOnUiThread(true)
-                .build() ///만약 테이블끼리의 동기화가 필요하면 램을 삭한다는의미
+                .build() ///만약 테이블끼리의 동기화가 필요하면 램을 삭제한다는의미
         Realm.setDefaultConfiguration(config) //램 초기 설정
 
         val realm = Realm.getDefaultInstance() //램을 얻었음

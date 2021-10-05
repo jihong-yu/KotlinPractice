@@ -54,4 +54,7 @@ interface RetrofitService { //baseUrl 뒷부분 처리
 
     @GET("youtube/list/")
     fun getYoutubeList():Call<ArrayList<Youtube>>
+
+    @GET("melon/list/")
+    fun getSongList():Call<ArrayList<Song>>
 }
